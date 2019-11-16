@@ -1,0 +1,186 @@
+
+img{
+
+	background-image: url(image/img/euro-homes.jpg);	
+	max-width: 100%;
+	height: auto;
+  background-size: cover;
+ }
+ .img{
+  opacity: .3;
+  filter: alpha(opacity=30);
+ }
+  .column img {
+  object-fit:  cover;
+}
+
+.center label{
+      font-family: 'Times New Roman';
+      font-style: italic;
+      text-transform:uppercase;
+      font-weight: 900;
+      font-size:40px;
+      text-align:center;
+      }
+      .center label:hover{
+      cursor: pointer;
+      }
+      .overlay nav a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: lato;
+
+      }
+      .overlay{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+      }
+
+    .overlay label{
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      right: 30px;
+      top: 40px;
+      background: url('https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+      z-index: 100;
+      cursor:pointer;
+        }
+
+  .overlay ul {
+      list-style: none;
+      padding: 20px;
+      margin: auto;
+      display: inline-block;
+      height: 100%;
+      position: relative;
+      }
+.overlay ul li {
+      display: block;
+      height: 20%;
+      height: calc(100% / 5);
+      min-height: 54px;
+      }
+      .overlay ul li a {
+      font-weight: 300;
+      display: block;
+      color: white;
+      text-decoration:none;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      font-family: 'lato';
+      text-transform:uppercase;
+      }
+      .overlay ul li a:hover,
+      .overlay ul li a:focus {
+      color: #000;
+      }
+
+.center~.overlay{
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+      transition: opacity 0.5s, visibility 0s 0.5s;
+      }
+       #ck:checked~.overlay{
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+      }
+     /* .overlay nav {
+      -moz-perspective: 300px;
+      }*/
+      .overlay nav ul {
+      opacity: 0.4;
+      -webkit-transform: translateY(-25%) rotateX(35deg);
+      transform: translateY(-25%) rotateX(35deg);
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+      }
+      #ck:checked~.overlay nav ul {
+      opacity: 1;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      }
+
+/*-------------------------------------------------------------*/
+
+
+.center {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: lato;
+  font-size: 55px;
+  padding: 50px ; 
+}
+/*------------------------------------------------------------*/
+/*
+a{
+	text-decoration: none;
+	font-style: italic;
+	font-weight: 900;
+	font-family: Times New Roman;
+	color: #dbe4eb;
+	line-height: 2.5;*/
+/*}*/
+/*-----------------------------------------------------------*/
+.center  
+{
+  color: #dbe4eb;
+  text-shadow: 
+   -1px -1px 0 #000,  
+    2px -2px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+/*dropdown*/
+.dropdown a{
+  display: flex;
+  position: absolute;
+  border-image: white;
+  padding: 5px;
+
+}
+
+.container2 img{
+  opacity: .9;
+  filter: alpha(opacity=90);  
+
+}
+
+
+.row {
+  width: 100%;
+  display: flex;
+
+
+}
+
+.column img{
+  /*background-image: url(image/img/door2.jpg, image/img/door3.jpg);*/
+  flex: 50%;
+  padding:1px;
+  transition: 5s to-outside;
+   /*max-width: 100%;
+  height: auto;
+  background-size: cover;*/
+}
+
+section a{
+  display: inline-block;
+  padding-right: 40px;
+  font-family: lato;
+  font-style: normal;
+  color: black;
+  background-color:#dbe4eb;
+
+}
+

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,700i,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="2d.css?v=1">
+
+  <title>2doors animation</title> 
+  
+  </head>
+<body>
+  <div class="container">
+    <img class="img" src="image/img/euro-homes.jpg" alt="eurohomes">
+        <input type="checkbox" id="ck">
+        <div class="center">
+        <label for="ck" >Drees Wood Products Inc.</label>
+  </div>
+<div class="overlay">
+    <label for="ck"></label>
+      <!-- nav -->
+  <nav>
+     <ul> 
+      <li><a class="active" href="#home">Home</a></li>
+  
+        <li><a href="#">Tour</a></li>
+        <li><a href="Wood Door/Aberdeen-with-OAK-CH-PCNR-1,4.jpg">Wood Doors</a></li>
+        <li><a href="#">RTF Doors</a></li>
+        <li><a href="#">Drawer Boxes</a></li>
+        <li><a href="#">Edgebanded Doors</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</div>
+<!-- ------------------------------ -->
+ <div></div>
+ <div class="" id="leftDoor"  style=";height:415px;width:539px;position:absolute;top:10px;z-index: 2000">
+   <img id="leftDoor_" src="image/img/door2.jpg">
+    </div>
+
+<div class="column" id="rightDoor" style=";height:415px;width:539px;position:absolute;top:10px;z-index: 2000">
+  <img id="rightDoor_"src="image/img/door3.jpg">
+   </div>
+
+</div>
+<!-- --------------------------------------------- -->
+<!-- product comparison -->
+<!-- <section class="intro">
+  <h1>Compare Door Style</h1>
+</section>
+
+<section class="products-comparison-table">
+  <header>
+    <h2>Styles</h2>
+    <div class="actions">
+      <a href="#" class="reset">Reset</a>
+      <a href="#" class="filter">Filter</a>  
+    </div>
+  </header>
+
+
+<div class="products-table">
+  <div class="features">
+    <div class="top-info">Styles</div>
+    <ul class="features-list">
+      <li>Price</li>
+      <li>Measurements</li>
+      <li>Make</li>
+      <li>Customer Rating</li>
+    </ul>
+  </div>
+
+  <div class="products-wrapper">
+    <ul class="product-columns">
+      <li class="product">
+        <div class="top-info">
+          <div class="check"></div>
+          <img src="Wood Door/Aberdeen-with-OAK-CH-PCNR-1,4.jpg" alt="product image">
+          <h3>Aberdeen-with-OAK</h3>
+        </div>
+        <ul class="features-list">
+          <li>$500</li>
+          <li>8x10</li>
+          <li>Oak</li>
+          <li>5*</li>
+        </ul>
+      </li>
+
+      <li class="product">
+        <div class="top-info">
+          <div class="check"></div>
+          <img src="Wood Door/Aberdeen118GOV3SelectWhiteBirch.jpg" alt="product image">
+          <h3>Aberdeen118GOV3Select</h3>
+        </div>
+        <ul class="features-list">
+          <li>$500</li>
+          <li>8x10</li>
+          <li> White Oak</li>
+          <li>5*</li>
+        </ul>
+      </li>
+    </ul>
+</div>
+
+      <ul class="cd-table-navigation">
+        <li><a href="#0" class="prev inactive">Prev</a></li>
+        <li><a href="#0" class="next">Next</a></li>
+      </ul>
+    </div> 
+  </section>  
+
+<------------------------------- -->
+
+
+<!-- button onclick both doors open the opposite way and disappear 
+<!- <button class="hide1"> -->
+
+
+<!--  <div class="" id="leftDoor"  style=";height:500px;width:800px;position:absolute;top:10px;z-index: 2000">
+   <img id="leftDoor_" src="image/img/door2.jpg">
+    </div>
+
+  <button>Start Animation</button>
+<div class="container2">
+<div class="row">
+  <div class="column door2" >
+   <img id="leftDoor_" src="image/img/door2.jpg">
+    </div> -->
+
+<!-- <button class="hide2"> -->
+<!-- <div class="column" class="door3">
+  <img id="rightDoor_"src="image/img/door3.jpg">
+   </div>
+</div>
+
+</div> -->
+
+<section>
+        <nav>
+          <a href="#">FORMS</a>
+          <a href="#">CONTACT</a>
+        </nav>
+      </section>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script> 
+
+
+$(document).ready(function(){
+  $("button").click(function(){  });
+
+    $("#leftDoor").animate({left: '-550px'});
+      $("#rightDoor").animate({right: '-800px'});
+
+  //     $(document).ready(function(){
+  // $("button").click(function(){  });
+
+    $("#rightDoor").animate({right: '-800px'});
+      $("#leftDoor").animate({left: '-800px'});
+
+
+});
+</script> 
+
+  </body>
+</html>
